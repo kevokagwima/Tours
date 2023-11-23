@@ -384,7 +384,13 @@ footer {
   font-size: 1.6ch;
 }
 
-@media screen and (min-height: 600px) {
+@media screen and (max-height: 1400px) {
+  .hero-image {
+    max-height: 50svh;
+  }
+}
+
+@media screen and (max-height: 600px) {
   .hero-image {
     max-height: 75svh;
   }
