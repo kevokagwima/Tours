@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,8 @@
   --radius: 0.3rem;
   --logo-font: "Allan", serif;
   --heading-1: "Rubik", sans-serif;
-  --text-font: "Noto Sans NKo Unjoined", sans-serif;
+  --text-font: "Tajawal", sans-serif;
+  --btn-font: "Josefin Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -46,6 +49,10 @@ h4 {
   font-family: var(--heading-1);
 }
 
+p {
+  font-size: 2.2ch;
+}
+
 p,
 span,
 a,
@@ -54,6 +61,7 @@ input,
 label,
 i {
   font-family: var(--text-font);
+  color: rgb(230, 230, 230);
 }
 
 img {
@@ -80,12 +88,17 @@ a {
 button {
   border: none;
   border-radius: var(--radius);
-  padding: 0.8em 1.5em;
-  font-family: var(--text-font);
+  padding: 1em 1.5em;
+  font-family: var(--btn-font);
   background-color: var(--yellow-1);
   color: var(--black);
   font-size: 2.2ch;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 250ms ease-in-out;
 }
 
 header {
@@ -119,7 +132,7 @@ section {
 }
 
 #link {
-  font-size: 1.8ch;
+  font-size: 2ch;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -174,8 +187,8 @@ section {
 
 .hero-info p {
   margin-top: 1rem;
-  line-height: 1.6;
-  font-size: 2.2ch;
+  line-height: 1.5;
+  font-size: 2.3ch;
   max-width: 80%;
   color: whitesmoke;
 }
@@ -227,7 +240,7 @@ section {
 
 .explore-info p,
 .discover-info p {
-  font-size: 2.2ch;
+  font-size: 2.3ch;
   margin-top: 1rem;
   line-height: 1.5;
   max-width: 80%;
@@ -238,16 +251,20 @@ section {
   list-style-type: none;
   display: grid;
   gap: 1rem;
+  font-size: 2.2ch;
 }
 
 .explore-info ul li {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 
 i {
   color: var(--yellow-1);
+}
+
+.explore i {
+  font-size: 2.2ch;
 }
 
 .explore-image img,
