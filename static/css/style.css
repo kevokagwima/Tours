@@ -105,6 +105,7 @@ section {
 #logo {
   font-family: var(--logo-font);
   color: var(--blue-1);
+  font-size: 3ch;
 }
 
 .links {
@@ -163,7 +164,7 @@ section {
 }
 
 .hero-image {
-  min-height: 40rem;
+  min-height: 45rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -331,7 +332,7 @@ i {
 
 .news-letter h1 {
   font-family: var(--logo-font);
-  font-size: 5ch;
+  font-size: 3ch;
 }
 
 form {
