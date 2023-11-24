@@ -1,0 +1,91 @@
+.tours h1 {
+  font-size: 5ch;
+  text-align: center;
+}
+
+.tours-box {
+  margin-top: 4rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tour-left,
+.tour-center,
+.tour-right {
+  min-height: 50rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.img {
+  position: relative;
+}
+
+.img h4 {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+  text-align: center;
+}
+
+.img img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 25rem;
+  border-radius: var(--radius);
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    padding-block: 4rem;
+  }
+
+  .tours-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tour-right {
+    grid-column: 1/3;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tours h1 {
+    font-size: 4ch;
+  }
+
+  .tours-box,
+  .tour-right {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-right {
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tours h1 {
+    font-size: 3.5ch;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tours h1 {
+    font-size: 3ch;
+  }
+
+  .img h4 {
+    font-size: 3.5ch;
+  }
+}
