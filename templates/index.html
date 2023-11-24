@@ -28,6 +28,11 @@
     </div>
     <div class="account">
       <button>Sign Up</button>
+      <div class="burger">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+      </div>
     </div>
   </header>
   <section class="hero">
@@ -42,14 +47,14 @@
     </div>
     <div class="hero-image">
       <div class="left">
-        <img loading="lazy" src="../static/images/pexels-andrea-piacquadio-3830880-min.jpg" alt="">
-        <img loading="lazy" src="../static/images/pexels-blue-arauz-17809398-min.jpg" alt="">
-        <img loading="lazy" src="../static/images/pexels-francesco-ungaro-464440-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-andrea-piacquadio-3830880-min-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-blue-arauz-17809398-min-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-francesco-ungaro-464440-min-min.jpg" alt="">
       </div>
       <div class="right">
-        <img loading="lazy" src="../static/images/pexels-julia-khalimova-3649174-min.jpg" alt="">
-        <img loading="lazy" src="../static/images/pexels-quang-nguyen-vinh-2147993-min.jpg" alt="">
-        <img loading="lazy" src="../static/images/pexels-quang-nguyen-vinh-2161449-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-julia-khalimova-3649174-min-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-quang-nguyen-vinh-2147993-min-min.jpg" alt="">
+        <img loading="lazy" src="../static/images/pexels-quang-nguyen-vinh-2161449-min-min.jpg" alt="">
 
       </div>
     </div>
@@ -78,7 +83,7 @@
       </div>
     </div>
     <div class="explore-image">
-      <img src="../static/images/pexels-keegan-checks-16444284-min.jpg" alt="">
+      <img loading="lazy" src="../static/images/pexels-keegan-checks-16444284-min-min.jpg" alt="">
     </div>
   </section>
   <section class="features">
@@ -160,7 +165,54 @@
       </div>
     </div>
     <div class="discover-image">
-      <img src="../static/images/pexels-antony-trivet-14106043-min.jpg" alt="">
+      <img loading="lazy" src="../static/images/pexels-antony-trivet-14106043-min.jpg" alt="">
+    </div>
+  </section>
+  <section class="testimonials">
+    <h1>Customer Testimonials</h1>
+    <p>Listen to what our clients have to say</p>
+    <div class="testimonial-box">
+      <div class="testimonial-content">
+        <button id="left" class="button" onclick="plusDivs(-1)">&#10094;</button>
+        <button id="right" class="button" onclick="plusDivs(1)">&#10095;</button>
+        <div id="one" class="testimonial">
+          <h4>Our experience with this company was absolutely amazing! The tour guides were knowledgeable and friendly,
+            and the itinerary was well-planned. We had a fantastic time exploring new places and creating unforgettable
+            memories.</h4>
+          <div class="testimonial-image">
+            <img loading="lazy" src="../static/images/pexels-jeffrey-reed-769772-min.jpg" alt="">
+            <p>John Doe</p>
+          </div>
+        </div>
+        <div id="two" class="testimonial">
+          <h4>I had the most unforgettable adventure with this travel and tours company! They took care of every detail,
+            from arranging transportation to selecting the best activities and attractions. I can't wait to book my next
+            trip
+            with them!
+          </h4>
+          <div class="testimonial-image">
+            <img loading="lazy" src="../static/images/pexels-andrea-piacquadio-774909-min.jpg" alt="">
+            <p>Sarah M.</p>
+          </div>
+        </div>
+        <div id="three" class="testimonial">
+          <h4>I had the pleasure of using this travel and tours company for a recent trip, and I was blown away by their
+            exceptional service. I highly recommend their services to anyone seeking a stress-free vacation.</h4>
+          <div class="testimonial-image">
+            <img loading="lazy" src="../static/images/pexels-italo-melo-2379004-min.jpg" alt="">
+            <p>David L.</p>
+          </div>
+        </div>
+        <div id="four" class="testimonial">
+          <h4>I recently went on a trip organized by this travel and tours company, and I was thoroughly impressed with
+            their well-organized itinerary. The company's attention to detail in crafting a diverse and enriching travel
+            experience truly exceeded my expectations.</h4>
+          <div class="testimonial-image">
+            <img loading="lazy" src="../static/images/pexels-christina-morillo-1181686-min.jpg" alt="">
+            <p>Emily W.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="footer-info">
@@ -229,6 +281,7 @@
       <p>© Copyright <b>Epic Journeys.</b> All Rights Reserved</p>
     </div>
   </footer>
+  <script defer src="../static/js/index.js"></script>
 </body>
 
 </html>
