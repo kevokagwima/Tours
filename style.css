@@ -481,7 +481,7 @@ form button {
 
 footer {
   padding: 1.5rem 6rem;
-  background-color: var(--black);
+  background-color: #212121b5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -572,7 +572,7 @@ footer {
   .discover-info p,
   .plan-info p,
   .plan-steps p,
-  li {
+  .explore-info ul li {
     font-size: 2ch;
   }
 
@@ -690,9 +690,12 @@ footer {
   .explore-info p,
   .discover-info p,
   .plan-info p,
-  .plan-steps p,
-  li {
+  .plan-steps p {
     font-size: 2.5ch;
+  }
+
+  .explore-info ul li {
+    font-size: 2.2ch;
   }
 
   #left {
@@ -729,9 +732,12 @@ footer {
   .discover-info p,
   .plan-info p,
   .plan-steps p,
-  .testimonials p,
-  li {
+  .testimonials p {
     font-size: 2.2ch;
+  }
+
+  .explore-info ul li {
+    font-size: 2ch;
   }
 
   .testimonial h4 {
@@ -797,7 +803,11 @@ footer {
   section,
   footer,
   header {
-    padding-inline: 1rem;
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem 1rem;
   }
 
   .hero-info h1 {
@@ -830,23 +840,34 @@ footer {
   .plan-info p,
   .plan-steps p,
   .testimonials p,
-  .testimonial h4,
-  li {
+  .testimonial h4 {
     font-size: 2ch;
+  }
+
+  .explore-info ul li {
+    font-size: 1.8ch;
   }
 
   .footer-box {
     grid-template-columns: 1fr;
   }
 
+  footer {
+    padding-block: 0.8rem;
+  }
+
   .news-letter {
     grid-column: 1/2;
+  }
+
+  .footer-text p {
+    font-size: 1.8ch;
   }
 }
 
 @media screen and (max-width: 400px) {
   .hero-info h1 {
-    font-size: 3ch;
+    font-size: 3.5ch;
   }
 
   .hero-info p {
@@ -870,8 +891,11 @@ footer {
   .plan-info p,
   .plan-steps p,
   .testimonials p,
-  .testimonial h4,
-  li {
+  .testimonial h4 {
     font-size: 1.8ch;
+  }
+
+  .explore-info ul li {
+    font-size: 1.55ch;
   }
 }
