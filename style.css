@@ -11,9 +11,9 @@
 }
 
 :root {
-  --blue-1: #0c356a;
+  --blue-1: #020202;
   --blue-2: #0174be;
-  --yellow-1: #ffc436;
+  --yellow-1: #50c002;
   --yellow-2: #ffcd4b;
   --black: #212121;
   --radius: 0.3rem;
@@ -102,8 +102,8 @@ button:hover {
 }
 
 header {
-  padding: 1rem 6rem;
-  background-color: var(--yellow-1);
+  padding: 0.5rem 6rem;
+  background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,9 +120,13 @@ section {
 }
 
 #logo {
-  font-family: var(--logo-font);
-  color: var(--blue-1);
-  font-size: 3ch;
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  box-shadow: none;
+  max-height: 4rem;
 }
 
 .links {
@@ -136,6 +140,10 @@ section {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+
+#link:hover {
+  color: var(--yellow-1);
 }
 
 #link i {
@@ -165,7 +173,7 @@ section {
   width: 1.5rem;
   height: 0.2rem;
   border-radius: var(--radius);
-  background-color: var(--blue-1);
+  background-color: var(--yellow-1);
 }
 
 .hero {
@@ -227,7 +235,7 @@ section {
 .left img,
 .right img {
   width: 19rem;
-  height: 20rem;
+  height: 18rem;
   object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
@@ -324,7 +332,7 @@ i {
 }
 
 .plan-step {
-  outline: 2px solid var(--blue-2);
+  outline: 2px solid #51c00272;
   border-radius: var(--radius);
   padding: 1rem;
   box-shadow: 0 4px 38px -3px rgba(0, 0, 0, 0.3);
@@ -353,7 +361,7 @@ i {
 }
 
 .testimonial-box {
-  margin-top: 5rem;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -379,10 +387,8 @@ i {
   max-width: 50%;
   margin-inline: auto;
   text-align: center;
-  background-color: var(--blue-2);
   padding: 4rem;
   border-radius: var(--radius);
-  box-shadow: 0 4px 38px -3px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial h4 {
@@ -407,7 +413,7 @@ i {
 }
 
 .footer-info {
-  background-color: var(--black);
+  background-color: #51c00272;
 }
 
 .footer-logo h1 {
@@ -442,9 +448,9 @@ i {
   font-size: 2.5ch;
 }
 
-.news-letter h1 {
-  font-family: var(--logo-font);
-  font-size: 3ch;
+.news-letter img {
+  box-shadow: none;
+  max-height: 6rem;
 }
 
 form {
@@ -480,8 +486,8 @@ form button {
 }
 
 footer {
-  padding: 1.5rem 6rem;
-  background-color: #212121b5;
+  padding: 1rem 6rem;
+  background-color: var(--blue-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -806,6 +812,10 @@ footer {
     padding: 1rem;
   }
 
+  #logo img {
+    max-height: 2.5rem;
+  }
+
   .hero {
     padding: 2rem 1rem 1rem;
   }
@@ -860,6 +870,10 @@ footer {
     grid-column: 1/2;
   }
 
+  .socials p i {
+    font-size: 2.2ch;
+  }
+
   .footer-text p {
     font-size: 1.8ch;
   }
@@ -893,6 +907,10 @@ footer {
   .testimonials p,
   .testimonial h4 {
     font-size: 1.8ch;
+  }
+
+  .testimonial h4 {
+    font-size: 1.4ch;
   }
 
   .explore-info ul li {
