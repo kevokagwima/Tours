@@ -19,3 +19,20 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "grid";
 }
+
+var modal = document.getElementById("myModal");
+var images = document.querySelectorAll("#gallery-img");
+var modalImg = document.getElementById("img01");
+
+images.forEach((img) => {
+  img.onclick = function () {
+    modal.style.display = "flex";
+    modalImg.src = this.src;
+  };
+});
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
