@@ -176,6 +176,49 @@ section {
   background-color: var(--yellow-1);
 }
 
+.side-nav {
+  background-color: var(--blue-1);
+  min-height: 100svh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  transform: translateY(-100%);
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.show-side-nav {
+  transform: translateY(0);
+}
+
+#close {
+  color: var(--yellow-1);
+  font-size: 4ch;
+  cursor: pointer;
+  font-family: var(--text-font);
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.side-links {
+  display: grid;
+  gap: 2rem;
+}
+
+.side-links > #link {
+  color: whitesmoke;
+  font-size: 5ch;
+  justify-content: center;
+}
+
 .hero {
   padding-block: 0;
 }
@@ -239,6 +282,7 @@ section {
   object-fit: cover;
   object-position: center;
   border-radius: var(--radius);
+  box-shadow: none;
 }
 
 .explore-info h1,
@@ -919,6 +963,10 @@ footer {
   footer,
   header {
     padding: 1rem;
+  }
+
+  .side-links #link {
+    font-size: 3ch;
   }
 
   #logo img {
