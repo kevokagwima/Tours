@@ -10,6 +10,10 @@ close.addEventListener("click", () => {
   side_nav.classList.remove("show-side-nav");
 });
 
+window.addEventListener("scroll", () => {
+  side_nav.classList.remove("show-side-nav");
+});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
